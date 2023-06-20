@@ -13,6 +13,7 @@ struct VicktoryApp: App {
     @StateObject var vm = ViewModel()
     var body: some Scene {
         WindowGroup {
+            
             Home()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(vm)
