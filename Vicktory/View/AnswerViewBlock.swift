@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AnswerViewBlock: View {
     @EnvironmentObject var vm: ViewModel
+
     
     var body: some View {
         VStack {
@@ -23,9 +24,11 @@ struct AnswerViewBlock: View {
                         .frame(width: 300, height: 60)
                         .foregroundColor(vm.buttonColor(for: answer))
                         .overlay {
-                            Text(answer)
-                                .lineLimit(1)
+                           
+                                Text(answer)
+                                    .lineLimit(1)
                                 .foregroundColor(vm.textColor(for: answer))
+                               
                         }
                 }
             }

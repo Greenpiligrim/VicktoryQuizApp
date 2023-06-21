@@ -16,17 +16,32 @@ class ViewModel: ObservableObject {
     @Published var circles: [Color] = []
     @Published var flagEndQuestions: Bool = false
     @Published var index = 0
-    @Published var result = 0
+    @Published var resultStatistic = 0
+    @Published var nextScreen: Bool = false
+    @Published var startLevelIndex = 4
+
     
     init(){
         goCheck()
     }
     
+    func nextScreenButtn() {
+        nextScreen = true
+    }
+    func againScreenBottn() {
+        nextScreen = false
+        startLevelIndex = 4
+        resultStatistic = 0
+        index = 0
+        flagEndQuestions = false
+        circles = []
+        goCheck()
+    }
     
    private func countCorrectAnswers() {
         let correctColor = Color.green
         let correctCount = circles.filter { $0 == correctColor }.count
-        result = correctCount
+        resultStatistic = correctCount
     }
 
 

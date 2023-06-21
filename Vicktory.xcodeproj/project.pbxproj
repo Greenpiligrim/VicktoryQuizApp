@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		A01E91C82A3FB27C00C3E762 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E91C72A3FB27C00C3E762 /* ViewModel.swift */; };
 		A01F0D1B2A3E6B98008BB4B0 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F0D1A2A3E6B98008BB4B0 /* TestView.swift */; };
+		A0729B802A41F7F900E1C7C4 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B7F2A41F7F900E1C7C4 /* CommentView.swift */; };
+		A0729B822A4207BE00E1C7C4 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B812A4207BD00E1C7C4 /* StartingView.swift */; };
+		A0729B842A43083300E1C7C4 /* TextStartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B832A43083300E1C7C4 /* TextStartingView.swift */; };
+		A0729B862A43125700E1C7C4 /* ButtonNextScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B852A43125700E1C7C4 /* ButtonNextScreen.swift */; };
+		A0729B882A431E6B00E1C7C4 /* QuizzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0729B872A431E6B00E1C7C4 /* QuizzView.swift */; };
+		A0729B8C2A4338ED00E1C7C4 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0729B8B2A4338ED00E1C7C4 /* sound.mp3 */; };
 		A0D37DA52A3E4A92008F884A /* VicktoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D37DA42A3E4A92008F884A /* VicktoryApp.swift */; };
 		A0D37DA72A3E4A92008F884A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D37DA62A3E4A92008F884A /* Persistence.swift */; };
 		A0D37DAA2A3E4A92008F884A /* Vicktory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0D37DA82A3E4A92008F884A /* Vicktory.xcdatamodeld */; };
@@ -26,6 +32,12 @@
 		A01E91C72A3FB27C00C3E762 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		A01F0D1A2A3E6B98008BB4B0 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		A07090632A3E756800EB5F3A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A0729B7F2A41F7F900E1C7C4 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		A0729B812A4207BD00E1C7C4 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
+		A0729B832A43083300E1C7C4 /* TextStartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStartingView.swift; sourceTree = "<group>"; };
+		A0729B852A43125700E1C7C4 /* ButtonNextScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNextScreen.swift; sourceTree = "<group>"; };
+		A0729B872A431E6B00E1C7C4 /* QuizzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzView.swift; sourceTree = "<group>"; };
+		A0729B8B2A4338ED00E1C7C4 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sound.mp3; path = ../../../../../../Downloads/sound.mp3; sourceTree = "<group>"; };
 		A0D37DA12A3E4A92008F884A /* Vicktory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vicktory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D37DA42A3E4A92008F884A /* VicktoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VicktoryApp.swift; sourceTree = "<group>"; };
 		A0D37DA62A3E4A92008F884A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				A01F0D1A2A3E6B98008BB4B0 /* TestView.swift */,
+				A0729B8B2A4338ED00E1C7C4 /* sound.mp3 */,
 				A07090632A3E756800EB5F3A /* MyPlayground.playground */,
 			);
 			path = Test;
@@ -108,8 +121,13 @@
 		A0D37DB82A3E4ACB008F884A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0729B872A431E6B00E1C7C4 /* QuizzView.swift */,
+				A0729B812A4207BD00E1C7C4 /* StartingView.swift */,
+				A0729B832A43083300E1C7C4 /* TextStartingView.swift */,
+				A0729B852A43125700E1C7C4 /* ButtonNextScreen.swift */,
 				A0D37DC02A3E4FDE008F884A /* AnswerViewBlock.swift */,
 				A0DEB3CD2A40C142007AEF75 /* StatisticView.swift */,
+				A0729B7F2A41F7F900E1C7C4 /* CommentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D37DB22A3E4A94008F884A /* Preview Assets.xcassets in Resources */,
+				A0729B8C2A4338ED00E1C7C4 /* sound.mp3 in Resources */,
 				A0D37DAE2A3E4A94008F884A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,15 +236,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01E91C82A3FB27C00C3E762 /* ViewModel.swift in Sources */,
+				A0729B802A41F7F900E1C7C4 /* CommentView.swift in Sources */,
 				A0D37DA52A3E4A92008F884A /* VicktoryApp.swift in Sources */,
+				A0729B842A43083300E1C7C4 /* TextStartingView.swift in Sources */,
 				A0D37DC12A3E4FDE008F884A /* AnswerViewBlock.swift in Sources */,
 				A0D37DAA2A3E4A92008F884A /* Vicktory.xcdatamodeld in Sources */,
 				A0D37DBD2A3E4C41008F884A /* Home.swift in Sources */,
 				A0D37DAC2A3E4A92008F884A /* ContentView.swift in Sources */,
+				A0729B882A431E6B00E1C7C4 /* QuizzView.swift in Sources */,
 				A0D37DC42A3E6069008F884A /* Color.swift in Sources */,
 				A01F0D1B2A3E6B98008BB4B0 /* TestView.swift in Sources */,
 				A0D37DA72A3E4A92008F884A /* Persistence.swift in Sources */,
+				A0729B862A43125700E1C7C4 /* ButtonNextScreen.swift in Sources */,
 				A0DEB3CE2A40C142007AEF75 /* StatisticView.swift in Sources */,
+				A0729B822A4207BE00E1C7C4 /* StartingView.swift in Sources */,
 				A0D37DBF2A3E4D18008F884A /* MocData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
